@@ -5,8 +5,10 @@
 	<title>Chessboard</title>
 </head>
 	<style>
-		table {
-			width: 190px;
+		tr, td {
+			height: 20px;
+			width: 20px;
+			text-align: center;
 		}
 		.beigl {
 			background-color: yellow;
@@ -19,17 +21,17 @@
 	<table>
 		<tr>
 			<td></td>
-			<td>H</td>
-			<td>G</td>
-			<td>F</td>
-			<td>E</td>
-			<td>D</td>
-			<td>C</td>
-			<td>B</td>
 			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+			<td>D</td>
+			<td>I</td>
+			<td>F</td>
+			<td>G</td>
+			<td>H</td>
 		</tr>
 		<tr>
-			<td>1</td>
+			<td>8</td>
 			<td class="beigl"></td>
 			<td class="brown"></td>
 			<td class="beigl"></td>
@@ -38,70 +40,46 @@
 			<td class="brown"></td>
 			<td class="beigl"></td>
 			<td class="brown"></td>
-			<td>1</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td>2</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td>3</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td>4</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>	
-			<td>5</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td class="brown"></td>
-			<td class="beigl"></td>
-			<td>6</td>
+			<td>8</td>
 		</tr>
 		<tr>
 			<td>7</td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>4</td>
 			<td class="beigl"></td>
 			<td class="brown"></td>
 			<td class="beigl"></td>
@@ -110,10 +88,10 @@
 			<td class="brown"></td>
 			<td class="beigl"></td>
 			<td class="brown"></td>	
-			<td>7</td>			
+			<td>4</td>
 		</tr>
 		<tr>
-			<td>8</td>
+			<td>3</td>
 			<td class="brown"></td>
 			<td class="beigl"></td>
 			<td class="brown"></td>
@@ -122,18 +100,42 @@
 			<td class="beigl"></td>
 			<td class="brown"></td>
 			<td class="beigl"></td>
-			<td>8</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>	
+			<td>2</td>			
+		</tr>
+		<tr>
+			<td>1</td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl">?</td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td class="brown"></td>
+			<td class="beigl"></td>
+			<td>1</td>
 		</tr>
 		<tr>
 			<td></td>
-			<td>H</td>
-			<td>G</td>
-			<td>F</td>
-			<td>E</td>
-			<td>D</td>
-			<td>C</td>
-			<td>B</td>
 			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+			<td>D</td>
+			<td>I</td>
+			<td>F</td>
+			<td>G</td>
+			<td>H</td>
 		</tr>
 	</table>
 </body>
