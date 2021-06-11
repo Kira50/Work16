@@ -18,12 +18,14 @@
 	let igravzagadki = {
 		zagadat: function() {
 			alert( 'Сейчас я загадаю ' + this.zagadki.length + ' загадки' );
+			let e = 0;
 			for(let z of this.zagadki) {
-				let answer = prompt(z.zagadka);
+				let answer = prompt(z.zagadka).toLowerCase() ;
 				let verno = false;
 				for(let o of z.otgadka) {
 					if ( o == answer ) {
 						verno = true;
+						e++;
 						break;
 					}	
 				}
@@ -32,6 +34,8 @@
 				else {
 					alert( 'Неправильно' );
 				}
+			alert(e);
+			alert( 'Игра окончена!' );
 			}
 		},
 		zagadki: [
