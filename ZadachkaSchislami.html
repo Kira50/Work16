@@ -14,13 +14,16 @@
 * Игру делаем объектом.
 * Приветствие и прощание делаем простым кодом.
 */
-let num = {
-	zagnum: function () {
-		alert('Предлагаю угадать число!');
-		
+function getRandomInt_100() {
+	alert('Поиграем?');
+	let soglasie = confirm('Согласен?');
+	if (soglasie) {
+		do {
+			num = prompt('Загадай число от 1 до 100!');
+			
+		} while(IzNaN(num)==true);
 	}
 }
-	
 </script>
 </head>
 <body></body>
