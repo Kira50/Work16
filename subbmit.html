@@ -15,7 +15,7 @@
 	
 }
 input[type="text"] {
-	width: 428px;
+	max-width: 328px;
 
 }
 input[name="name"] {
@@ -43,6 +43,7 @@ input[name="message"] {
 	border-radius: 10px;
 }
 input[name="submit"] {
+	max-width: 328px;
 	width: 428px;
 	height: 72px;
 	background-color: #5A98D0; 
@@ -69,22 +70,24 @@ h6 {
 	margin-block-end: 0;
 }
 form {
-	display: flex;
-	justify-content: center;
+	max-width: 328px;
+	margin: 0 auto;
+	padding-top: 56px;
 }
+
 	</style>
 </head>
 <body>
-	<div class="brd"
+	<div class="brd">
 		<form action="" method="post">
-			<h1>SEND US MESSAGE</h1>
-			<h6>Full Name</h6>
-			<input type="text" placeholder="Your Name" name="name">
-			<h6>Email</h6>
-			<input type="text" placeholder="Your Email" name="email">
-			<h6>Message</h6>
-			<input type="text" placeholder="Your Message" name="message">
-			<input type="submit" value="SUBMIT" name="submit">
+			<span><h1>SEND US MESSAGE</h1></span>
+			<span><h6>Full Name</h6></span>
+			<span><input type="text" placeholder="Your Name" name="name" /></span>
+			<span><h6>Email</h6></span>
+			<span><input type="text" placeholder="Your Email" name="email" /></span>
+			<span><h6>Message</h6></span>
+			<span><input type="text" placeholder="Your Message" name="message" /></span>
+			<span><input type="submit" value="SUBMIT" name="submit" /></span>
 		</form>
 	</div>
 </body>

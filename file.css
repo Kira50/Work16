@@ -58,10 +58,11 @@ header {
 	position: relative;
 }
 .headertext {
-	width: 400px;
-	padding: 44px 0 0;
+	width: 780px;
+	height: 60px;
+	padding-top: 44px;
+	padding-left: 330px;
 	text-align: center;
-	align-items: center;
 }
 .headertext > div {
 	opacity: 0.6;
@@ -95,7 +96,7 @@ main {
 	
 }
 input[type="text"] {
-	width: 428px;
+	max-width: 328px;
 
 }
 input[name="name"] {
@@ -123,6 +124,7 @@ input[name="message"] {
 	border-radius: 10px;
 }
 input[name="submit"] {
+	max-width: 328px;
 	width: 428px;
 	height: 72px;
 	background-color: #5A98D0; 
@@ -149,8 +151,16 @@ h6 {
 	margin-block-end: 0;
 }
 form {
-	display: flex;
-	justify-content: center;
+	max-width: 328px;
+	margin: 0 auto;
+	padding-top: 56px;
+}
+
+/* map */
+.map {
+	width: 900px;
+	height: 480px;
+	padding-left: 213px;
 }
 /* footer */
 footer {

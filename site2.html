@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Site 2</title>
     <link rel="stylesheet" href="file.css">
-    <script src="site.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"type="text/javascript"></script>
+	<script src="site.js"></script>
 </head>
 <body>
     <header>
@@ -26,11 +27,11 @@
 			</div>
 		</div>
 		<div class="bottomheader">
-			<div class="container">
+		
 				<div class="headertext">
 					<h2>Contact Us</h2>
 					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
+			
 			</div>
 		</div>
 	</header>
@@ -44,14 +45,14 @@
 					<div class="form">
 						<div class="brd"
 							<form action="" method="post">
-								<h1>SEND US MESSAGE</h1>
-								<h6>Full Name</h6>
-								<input type="text" placeholder="Your Name" name="name">
-								<h6>Email</h6>
-								<input type="text" placeholder="Your Email" name="email">
-								<h6>Message</h6>
-								<input type="text" placeholder="Your Message" name="message">
-								<input type="submit" value="SUBMIT" name="submit">
+								<span><h1>SEND US MESSAGE</h1></span>
+								<span><h6>Full Name</h6></span>
+								<span><input type="text" placeholder="Your Name" name="name" /></span>
+								<span><h6>Email</h6></span>
+								<span><input type="text" placeholder="Your Email" name="email" /></span>
+								<span><h6>Message</h6></span>
+								<span><input type="text" placeholder="Your Message" name="message" /></span>
+								<span><input type="submit" value="SUBMIT" name="submit" /></span>
 							</form>
 						</div>
 					</div>
@@ -59,9 +60,7 @@
 			</div>
 		</div>
 		<div class="bottommain">
-			<div class="map">
-				<img src="map.jpg">
-			</div>
+			<div class="map" id="map"></div>
 		</div>
 	</main>
     <footer>
