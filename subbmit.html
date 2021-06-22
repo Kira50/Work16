@@ -3,91 +3,72 @@
 <head>
     <meta charset="utf-8">
     <title>Submit</title>
-	<style>
-.brd {
-	width: 540px;
-	height: 800px;
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	border-radius: 10px;
-	
+<style>
+* {
+    padding: 0;
+	margin: 0;
 }
-input[type="text"] {
-	max-width: 328px;
+ .brd {
+ 	height: 800px;
+ 	border: 1px solid #fff;
+ 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ 	font-family: 'Roboto', sans-serif;
+ 	font-style: normal;
+ 	border-radius: 10px;
 
+input {
+	width: 100%;
+ 	height: 72px;
+ 	opacity: 0.4;
+ 	border: 1px solid #356EAD;
+ 	box-sizing: border-box;
+ 	border-radius: 10px;
+ }
+
+button {
+ 	width: 428px;
+ 	height: 72px;
+ 	background-color: #5A98D0; 
+input[name="submit"] {
+ 	border-radius: 10px;
+ 	font-size: 26px;
+ 	color: #fff;
+ }
+ h1 {
+ 	font-weight: 500;
+ 	margin-block-end: 0;
+ }
+ form {
+	width: 540px;
+ 	margin: 0 auto;
+ }
+fieldset {
+    border: none;
+    padding: 0 56px 32px;
 }
-input[name="name"] {
-	width: 428px;
-	height: 72px;
-	opacity: 0.4;
-	border: 1px solid #356EAD;
-	box-sizing: border-box;
-	border-radius: 10px;
-}
-input[name="email"] {
-	width: 428px;
-	height: 72px;
-	opacity: 0.4;
-	border: 1px solid #356EAD;
-	box-sizing: border-box;
-	border-radius: 10px;
-}
-input[name="message"] {
-	width: 428px;
+textarea {
+	width: 100%;
 	height: 144px;
 	opacity: 0.4;
 	border: 1px solid #356EAD;
 	box-sizing: border-box;
 	border-radius: 10px;
 }
-input[name="submit"] {
-	max-width: 328px;
-	width: 428px;
-	height: 72px;
-	background-color: #5A98D0; 
-	box-shadow: 5px 10px 20px rgba(16, 112, 177, 0.2);
-	border: 1px solid #5A98D0;
-	border-radius: 10px;
-	font-size: 26px;
-	color: #fff;
-	margin-top: 72px;
-}
-h1 {
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 30px;
-	letter-spacing: 0.04em;
-	color: #1F3F68;
-}
-h6 {
-	font-size: 16px;
-	line-height: 30px;
-	letter-spacing: 0.04em;
-	color: #1F3F68;
-	opacity: 0.8;
-	margin-block-end: 0;
-}
-form {
-	max-width: 328px;
-	margin: 0 auto;
-	padding-top: 56px;
-}
-
-	</style>
+ 	</style>
 </head>
 <body>
 	<div class="brd">
 		<form action="" method="post">
-			<span><h1>SEND US MESSAGE</h1></span>
-			<span><h6>Full Name</h6></span>
-			<span><input type="text" placeholder="Your Name" name="name" /></span>
-			<span><h6>Email</h6></span>
-			<span><input type="text" placeholder="Your Email" name="email" /></span>
-			<span><h6>Message</h6></span>
-			<span><input type="text" placeholder="Your Message" name="message" /></span>
-			<span><input type="submit" value="SUBMIT" name="submit" /></span>
+			<div class="brd">
+				<fieldset><h1>SEND US MESSAGE</h1></fieldset>
+				<fieldset><h6>Full Name</h6></fieldset>
+				<fieldset><input type="text" placeholder="Your Name" name="name" /></fieldset>
+				<fieldset><h6>Email</h6></fieldset>
+				<fieldset><input type="text" placeholder="Your Email" name="email" /></fieldset>
+				<fieldset><h6>Message</h6></fieldset>
+				<fieldset><textarea placeholder="Your Message" name="message"></textarea></fieldset>
+				<fieldset><button type="submit">SUBMIT</button></fieldset>
+			</div>
 		</form>
 	</div>
 </body>

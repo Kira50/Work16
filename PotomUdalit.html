@@ -1,0 +1,20 @@
+<script>
+function sumInput() {
+	let arr = [];
+	while(1) {
+		let a = prompt('Введите число');
+		if(a === ''|| isNaN(a)|| a === null)
+			break;
+		else 
+			arr.push(+a);
+	}
+	if(arr.length === 0)
+		return undefined;
+	let sum = 0;
+	for(let a of arr)
+		sum+=a;
+	return sum;
+	
+}
+alert(sumInput());
+</script>
