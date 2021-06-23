@@ -3,6 +3,6 @@ alert('Задание по JS с применением библиотеки jQu
 
 $(function($) {
 	$('button').on('click', () => {
-		$('p').fadeOut('slow');
+		$('p').fadeIn('slow');
 	});
 });
