@@ -10,7 +10,7 @@ body {
 	color: #b5a167;
 	padding-top: 200px;
 	padding-left: 500px;
-	position: absolute;
+	/*position: absolute;*/
 }
 .modal {
 	height: 150px;
@@ -19,7 +19,7 @@ body {
  	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	background: #eae3a4;
 	text-align: center;
-	display: absolute;
+	position: absolute;
 }
 button {
 	width: 100px;
@@ -32,9 +32,11 @@ button {
 <script src="zad_jQuery.js"></script>
     </head>
     <body>
-		<div class="modal">
-			<p>Это задание по JS</p>
-			<button id="button">ok</button>
+		<div class="screen">
+			<div class="modal">
+				<p>Это задание по JS</p>
+				<button id="button">ok</button>
+			</div>
 		</div>
     </body>
 </html>
