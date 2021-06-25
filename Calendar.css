@@ -76,6 +76,10 @@ button {
 	box-sizing: border-box;
 	border: 1px solid #177b72;
 }
+.modal .selected {
+	background: pink;
+	color: white;
+}
 .modal .holiday {
 	border-color: red;
 	color: red;
