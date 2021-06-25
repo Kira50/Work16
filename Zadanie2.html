@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>Задание по CSS</title>
+<head>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<style>
+		.wrapper {
+			width: 1340px;
+			overflow-x: scroll;
+			display: flex;
+		}
+		.block1 {
+			float:left;
+			width: 666px;
+			height: 2000px;
+			background-color: blue;
+		}
+		.block2 {
+			float:right;
+			width: 666px;
+			height: 2000px;
+			background-color: red;
+		}
+		.round {
+			width: 400px;
+			height: 400px; 
+			background-color: red;
+			border: 10px solid #7922cc;
+			border-radius: 200px;
+			position: fixed;
+			margin-left: 130px;
+			margin-top: 80px;
+			z-index: 0;
+		}
+		.ramka {
+			height: 200px;
+			width: 1500px;
+			font: 30px serif;
+			color: white;
+			border: 20px solid pink;
+			z-index: 10;
+			margin-top: -20px;
+			padding-left: 870px;
+			padding-top: 60px;
+			position: absolute;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="block1">Блок 1</div>
+		<div class="block2">Блок 2>
+			<div class="round"></div>
+		</div>
+	</div>
+	<div class="ramka">Какой-нибудь текст</div>
+</body>
+</html>
