@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charcet="utf-8">
+	<title>СайтМагазин</title>
+	<style>
+/* base */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 13px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+
+/* header */
+.topheader {
+	background: #000;
+	color: #fff;
+	line-height: 40px;
+}
+.bottomheader {
+	background: #f93c00;
+	color: #fff;
+	line-height:30px;
+	padding: 10px 0;
+}
+.bottomheader .container {
+	/*display: flex; вариант 1 */
+	text-align: right;
+}
+.anytext {
+	/*flex: 1 1 auto; вариант 1 */
+	font-weight: 700;
+	float: left;
+}
+.fakebutton {
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 0 0 20px;
+	cursor: pointer;
+	/*flex: none; вариант 1 */
+}
+.fakebutton:hover {
+	color: #fff; 
+	
+}
+
+/* footer */
+.f_block {
+	border-top: 1px solid #e5e5e5;
+}
+
+/* main */
+.flexdesk {
+	display: flex;
+}
+aside {
+	flex: 0 0 192px;
+	margin-right: 20px;
+}
+.maincontent {
+	flex: 1 1 auto;
+}
+
+	</style>
+	<link rel="stilesheet" href=".site1.css">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+	<link href = "https://fonts.googleapis.com/css2? family = Rubik: wght @ 300 & display = swap" rel = "таблица стилей">
+	<script src="<!-- Здесь файл со скриптами -->"></script>
+</head
+<body>
+<!--
+верхняя полоса: "Ваш город" с попапом, несколько ссылок
+средняя полоса: меню разделов, корзина, авторизация, логотип
+нижняя полоса: главное меню и форма поиска
+самая нижняя полоса: выделена цветом - ссылки на акции
+-->
+  
+	    <header>
+        <div class="topheader">
+            <div class="container">
+                <!-- Блок "ваш город" с попапом и несколько ссылок -->
+                qwerty
+            </div>
+        </div>
+        <div class="middleheader">
+            <div class="container">
+                <!-- Меню разделов, логотип, вход и корзина, под ними главное меню и форма поиска -->
+                qwerty
+            </div>
+        </div>
+        <div class="bottomheader">
+            <div class="container">
+                <span class="anytext">Какой-то текст...</span><!--
+                --><span class="fakebutton" <!-- onclick="location.href = '' Это имитатор перехода на страницу-->">Ссылка</span><!--
+                --><span class="fakebutton">Тоже ссылка</span><!--
+                --><span class="fakebutton">Ещё ссылка</span>
+            </div>
+        </div>
+    </header>
+	<footer>
+<!--
+верхний блок: заголово, переключатель вкладок,
+средний блок: форма подписки под ним меню столбиками(flex-box)
+нижний блок: copyrite
+-->
+
+		<div class="f_block">
+            <div class="container">
+                <!-- Заголовок, переключатель вкладок, вкладки с меню -->
+                qwerty
+            </div>
+        </div>
+        <div class="f_block">
+            <div class="container">
+                <!-- Форма подписки, под ней меню столбиками -->
+                qwerty
+            </div>
+        </div>
+        <div class="f_block">
+            <div class="container">
+                <!-- Копирайт и т.п. -->
+                qwerty
+            </div>
+        </div>
+	</footer>
+</body>
+</html>
